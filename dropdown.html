@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+ 
+
+#main-menu{
+    display: flex;
+    list-style-type: none;
+}
+
+li{
+    flex-grow: 1;
+}
+
+
+li:hover{
+    background-color:  cyan;
+    cursor: pointer;
+}
+.child-menu{
+    display: none;
+    position: absolute;
+    list-style-type: none;
+
+}
+.sub-container:hover .sub-child{
+    display: block;
+}
+.sub-container{
+    position: relative; 
+} 
+.sub-child{
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    left: 35px;
+ 
+}
+.menu-container:hover .child-menu{
+    display: block;
+}
+
+.menu-container{
+    position: relative
+}
+ 
+  </style>
+</head>
+<body>
+
+    <ol id="main-menu">
+        <li class="menu-container">
+            Sindh
+            <ol class="child-menu">
+                <li class="sub-container">Sukkur
+                    <ol class="sub-child">
+                        <li>details</li>
+                        <li>map</li>
+                    </ol>
+                </li>
+                <li class="sub-container">Karachi
+                    <ol class="sub-child">
+                    <li>detail</li>
+                    <li>maps</li></ol>
+                    
+                </li>
+                <li>Rohri</li>
+            </ol>
+        </li>
+        <li class="menu-container">KPK
+            <ol class="child-menu">
+                <li class="sub-container">one
+                    <ol class="sub-child">
+                        <li>details</li>
+                        <li>map</li>
+                    </ol>
+                </li>
+                <li>two</li>
+                <li>three</li>
+            </ol>
+         </li>
+         <li class="menu-container">Punjab
+             <ol class="child-menu">
+                 <li>lahore</li>
+                 <li>Faisalabad</li>
+                 </ol>
+                 </li>
+         <li class="menu-container">Balochistan
+             <ol class="child-menu">
+                 <li>four</li>
+                 <li>five</li>
+ 
+            </ol>
+        </li>
+    </ol>
+    
+</body>
+<!-- </html>
+
+
+ 

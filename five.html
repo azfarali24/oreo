@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        header{
+            grid-column: span 6;
+            background-color: red;
+        }
+
+        div{
+            background-color: olive;
+            grid-column: span 4;
+        }
+
+        span{
+            background-color: darkorchid;
+            grid-column: span 2;
+        }
+
+
+
+        footer{
+            background-color: orange;
+            grid-column: span 12;
+        }
+
+        section{
+            background-color: rgb(8, 241, 183);
+            grid-column: span 10;
+        }
+
+     
+
+        aside{
+            background-color: blue;
+            grid-column: span 2;
+        }
+
+        #container{
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: 100px 700px 100px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+
+    <div id="container">
+        <header></header>
+        <div></div>
+        <span></span>
+        <aside></aside>
+        <section></section>
+        <footer></footer>
+    </div>
+    
+</body>
+</html>

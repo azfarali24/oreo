@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+
+        @keyframes fanWaliAnimation{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes meriAnimation {
+
+            0%{
+                top:0;
+                right:0;
+            }
+
+            50%{
+                top:0;
+                right:50%;
+            }
+
+            100%{
+                top:300px;
+                right: 50%;
+            }
+
+            
+        }
+
+        /* #myTruck:hover{
+            right: 500px;    
+            top:200px
+        } */
+
+
+        #myTruck{
+            width: 500px;
+            position: absolute;
+            left:0;
+            top:0;
+            transform: skewX(20deg);
+            animation: fanWaliAnimation 10s linear 0s;
+            animation-iteration-count: infinite;
+                        
+        }
+
+        /* #box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            
+            animation-name: colorWaliAnimation;
+            animation-duration: 5s;
+            animation-delay: 0s;
+            animation-timing-function: linear;
+
+
+        } */
+
+        @keyframes colorWaliAnimation {
+
+            0%{
+                background-color: orange;
+            }
+
+            20%{
+                background-color: blueviolet;
+            }
+
+            50%{
+                background-color: crimson;
+            }
+
+            100%{
+                background-color: greenyellow;
+            }
+            
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div id="box"></div>
+
+    <img id="myTruck" src="2.png" alt="">
+    <img id="myTruck" src="fan.png" alt="">
+    
+</body>
+</html>

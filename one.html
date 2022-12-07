@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin:0;
+            padding: 0;
+        }
+
+        #darkPatti{
+            background-color: #00796a;
+            height: 30px;
+        }
+
+        li{
+            display: inline-block;
+        }
+
+        li:first-child{
+            width: 510px;
+        }
+
+        li:not(:first-child){
+            margin-left: 25px;
+        }
+
+        header{
+            color: white;
+            background-color: #008375;
+        }
+        nav{
+            padding-top: 15px;
+            padding-left: 40px;
+        }
+
+        section{
+            BACKGROUND: #008375;
+        }
+
+        .part{
+            display: inline-block;
+            width: 49%;
+        }
+        .part img{
+            vertical-align: middle;
+            position: relative;
+            left: 260px;
+        }
+        
+        .round-btn{
+            background: #008375;
+            padding: 10px 26px;
+            border-radius: 50px;
+            border-color:cyan;
+            left: 31%;
+            position: relative
+        }
+
+        .box{
+            vertical-align: middle;
+            display: inline-block;
+            width: 160px;
+            height: 160px;
+            border-radius: 10px;
+            margin-left: 50px;
+            background-color: #008e7d;
+            position: relative;
+        }
+        h1{
+            left: 201px;
+             position: relative;
+             color: aqua;
+        }
+        p{
+            position: relative;
+            left: 203px;
+            top: 10px;
+            color: aqua 
+        }
+        span{
+            position: relative;
+            left: 39%;
+            columns: cyan;
+        }
+
+#boxContainer{
+    margin:auto;
+    width:fit-content;
+    position: relative;
+    top: -30px;
+}
+.box > div{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    left:0;
+    color:white;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+
+}
+
+        #btn-panel{
+            position: relative;
+    top: 32px;
+        }
+
+        /* #008375 */
+    </style>
+</head>
+
+
+<body>
+
+    <div id="app">
+
+        <header>
+
+            <div id="darkPatti">
+
+            </div>
+
+            <nav>
+                <ol>
+                    <li>Impact</li> 
+                    <li>Home</li> 
+                    <li>About</li> 
+                    <li>Services</li> 
+                    <li>Portflio</li> 
+                    <li>Team</li> 
+                    <li>Blog</li> 
+                    <li>Dropdown</li> 
+                    <li>Contact</li> 
+                </ol>
+
+            </nav>
+
+        </header>
+
+        <section>
+            <div class="part">
+                <h1>Welcome to Impact</h1>
+                <p>
+                    Some simple steps to learn about impact. 
+                </p>
+                
+                <div id="btn-panel">
+                    <button class="round-btn">Get Started</button>
+                    <img src="play.jpg" alt="">
+                    <span>Watch Video</span>
+                </div>
+            </div>
+            <div class="part">
+                <img src="cut.jpg" alt="">
+            </div>
+        </section>
+
+        <div id="boxContainer">
+            <div class="box">
+                <div>
+                    <img src="comp.jpg" alt="">    
+                    <h4>Lorem Ipsum</h4>
+                </div>
+            </div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
